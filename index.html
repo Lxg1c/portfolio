@@ -5,8 +5,149 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" href="style.css">
+
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </head>
 <body>
-    
+    <div class="app">
+        <header class="header" role="banner">
+            <div class="header__container container">
+                <section class="header__left" aria-label="User stats">
+                    <p class="header__text">
+                        <span>48</span> LEVEL
+                    </p>
+                    <button aria-label="Add level" class="btn-reset header__button">
+                        <img src="./assets/plus.svg" alt="plus">
+                    </button>
+                    <p class="header__text">
+                        <span>1,425</span> COINS AWARDED
+                    </p>
+                </section>
+
+                <section class="header__right" aria-label="Credits and server time">
+                    <p class="header__text">
+                        <span class="server-time">00:00</span> SERVER TIME 
+                    </p>
+                </section>
+            </div>
+        </header>
+
+        <div class="glowing-corner"></div>
+
+        <main class="horizontal-scroll">
+            <section class="home section" id="home" aria-label="Home Section">
+                <div class="home__container">
+                    <video autoplay loop muted style="width: 850px; height: 600px; border: 2px solid #E84A4A;">
+                        <source src="./assets/mainVideo.mp4" type="video/mp4">
+                        Ваш браузер не поддерживает тег video.
+                    </video>
+                </div>
+            </section>
+
+            <section class="projects section" id="projects" aria-label="Projects Section">
+                <div class="projects__container">
+                    <!-- Slider main container -->
+                    <div class="swiper" style="width: 850px; height: 600px;">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="./assets//todolist.png" alt="project" />
+                            </div>
+
+                            <div class="swiper-slide">
+                                <img src="./assets/imageUpdate.png" />
+                            </div>
+                            
+                            <div class="swiper-slide">
+                                <img src="./assets/vaudience.png" />
+                            </div>
+
+                            <div class="swiper-slide">
+                                <img src="./assets/pokemonMemoryGame.png" />
+                            </div>
+
+                            <div class="swiper-slide">
+                                <img src="./assets/ujjo.png" />
+                            </div>
+
+                            <div class="swiper-slide">
+                                <img src="./assets/rezero.png" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="about section" id="about" aria-label="About Section">
+                <div class="about__container">
+                    <h2>About Me</h2>
+                    <p>Some information about me.</p>
+                </div>
+            </section>
+
+            <section class="contact section" id="contacts" aria-label="Contact Section">
+                <div class="contact__container">
+                    <h2>Contact Me</h2>
+                    <p>Get in touch.</p>
+                </div>
+            </section>
+        </main>
+
+        <div class="user" aria-label="User Information">
+            <img class="user-img" src="./assets/girlImage.svg" alt="User Image">
+            <div class="name__container">
+                <h1 class="user-title">NAME</h1>
+                <p class="user-text">NICK TERAN</p>
+            </div>
+            <div class="occupation__container">
+                <h1 class="user-title">OCCUPATION</h1>
+                <p class="user-text">WEB DEVELOPER</p>
+            </div>
+            <div class="availability">
+                <h1 class="user-title">AVAILABILITY</h1>
+                <a href="#contacts" class="user-link">OPEN FOR HIRE</a>
+            </div>
+            <div class="links__container">
+                <h1 class="user-title">GITHUB</h1>
+                <a href="https://github.com/Lxg1c?tab=overview&from=2025-02-01&to=2025-02-23" class="user-link" target="_blank">
+                    OPEN CONNECTION
+                    <img class="user-link-img" src="./assets/github.svg" alt="GitHub Icon" />
+                </a>
+            </div>
+        </div>
+
+        <div class="quest" aria-label="Quest Information">
+            <h1 class="quest-title">ACTIVE QUEST</h1>
+            <p class="quest-text">CAREER SKILL-UP LINE</p>
+            <p class="quest-text" style="color: #fff;">QUEST NAME</p>
+            <p class="quest-name">WORK</p>
+            <p class="quest-text" style="color: #fff;">GOAL</p>
+            <p class="quest-text" style="max-width: 200px;">Find a job where I can grow into a strong frontend developer</p>
+        </div>
+
+        <div class="navigation" aria-label="Main Navigation">
+            <nav class="navigation__nav">
+                <ul class="navigation__list">
+                    <li><a href="#home" class="nav-link" data-index="0">HOME</a></li>
+                    <li><a href="#projects" class="nav-link" data-index="1">PROJECTS</a></li>
+                    <li><a href="#about" class="nav-link" data-index="2">ABOUT</a></li>
+                    <li><a href="#contacts" class="nav-link" data-index="3">CONTACTS</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="navigation-arrows" aria-label="Section Navigation">
+            <button class="arrow left-arrow" aria-label="Previous section">&#9664;</button>
+            <button class="arrow right-arrow" aria-label="Next section">&#9654;</button>
+        </div>
+    </div>
+
+    <script src="splide.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
