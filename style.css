@@ -120,7 +120,7 @@
 .user {
     position: fixed;
     top: 36%;
-    left: 50px;
+    left: 30px;
     transform: translateY(-35%);
     background-color: var(--nav-bg);
     padding: 10px;
